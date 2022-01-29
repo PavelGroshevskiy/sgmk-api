@@ -1,10 +1,10 @@
 version: '3'
-service:
-  top.api:
-    image: top-api:latest
-    container_name: top-api
+services:
+  sgmk.api:
+    image: sgmk:latest
+    container_name: sgmk-api
     restart: always
     ports:
-      - 3000:3000
+      - 3002:3002
     volumes:
       - ./.env:/opt/app/.env
